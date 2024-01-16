@@ -1,0 +1,43 @@
+{
+  "name": "eb-backend-example",
+  "version": "1.0.0",
+  "description": "An example REST API built with Express and deployed in AWS EB",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferlarag/eb-backend-example.git"
+  },
+  "keywords": [
+    "aws",
+    "elastic",
+    "beanstalk",
+    "node",
+    "express",
+    "typescript"
+  ],
+  "author": "ferlara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferlarag/eb-backend-example/issues"
+  },
+  "homepage": "https://github.com/ferlarag/eb-backend-example#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.2",
+    "prisma": "^5.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
