@@ -17,7 +17,8 @@ const dotenv_1 = require("dotenv");
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const routers_1 = __importDefault(require("./routers"));
-const PORT = process.env.PORT || 3001;
+// elastics' default port is 8080
+const PORT = process.env.PORT || 8080;
 function createApp() {
     const app = (0, express_1.default)();
     app.use(express_1.default.json());
