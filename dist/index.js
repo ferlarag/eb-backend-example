@@ -27,6 +27,10 @@ function createApp() {
     }));
     app.use((0, cors_1.default)());
     app.use("/api", routers_1.default);
+    //redirect to the /api router
+    app.get("/", (req, res) => {
+        res.redirect("/api");
+    });
     return app;
 }
 function main() {

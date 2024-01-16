@@ -19,6 +19,11 @@ function createApp() {
   app.use(cors());
   app.use("/api", mainRouter);
 
+  //redirect to the /api router
+  app.get("/", (req, res) => {
+    res.redirect("/api");
+  });
+
   return app;
 }
 
