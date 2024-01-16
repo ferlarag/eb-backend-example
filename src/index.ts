@@ -5,7 +5,8 @@ import express, {Request, Response, NextFunction} from "express";
 import cors from "cors";
 import mainRouter from "./routers";
 
-const PORT = process.env.PORT || 3001;
+// elastics' default port is 8080
+const PORT = process.env.PORT || 8080;
 
 function createApp() {
   const app = express();
